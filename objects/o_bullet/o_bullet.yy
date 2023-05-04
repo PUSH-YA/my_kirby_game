@@ -1,8 +1,12 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_bcg_bottom",
-  "eventList": [],
+  "name": "o_bullet",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":77,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"o_enemy","path":"objects/o_enemy/o_enemy.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -26,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "s_wall_bottom",
-    "path": "sprites/s_wall_bottom/s_wall_bottom.yy",
+    "name": "s_bullet",
+    "path": "sprites/s_bullet/s_bullet.yy",
   },
   "spriteMaskId": null,
   "visible": true,
