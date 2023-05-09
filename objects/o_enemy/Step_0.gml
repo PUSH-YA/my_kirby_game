@@ -14,12 +14,29 @@ if(place_meeting(x, y+vsp, o_wall)){
 y = y + vsp;
 
 
+
+			
+
 //Animation
 image_speed = 0;
-if(health > 0){
+if(enemy_health > 0){
 	sprite_index = s_enemy;
 	image_index = priv_index;
-}else{
+	
+	//shooty shooty time
+	distance_to_attack = point_distance(x,y,o_player.x,o_player.y)
+	if(attack >= 120 && distance_to_attack < safe_space){ // shooty shooty time
+			
+			attack = 0;
+			with (instance_create_layer(x,y, "bullets", o_bullet_boss)){
+				speed = 4;
+				direction  =  point_direction(other.x,other.y,o_player.x, o_player.y-5);
+				image_angle = direction;
+			}
+	}
+	attack++;
+}	
+else{
 	sprite_index = s_enemy_down;
 	image_index = priv_index;
 	
@@ -30,4 +47,8 @@ if(health > 0){
 		instance_destroy();
 	}
 }
+
+
+
+		
 

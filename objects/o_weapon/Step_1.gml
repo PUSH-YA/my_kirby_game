@@ -13,10 +13,12 @@ if (keyboard_check_pressed(vk_shift) || mouse_check_button_pressed(mb_any)){
 	}
 
 	//like editing in the player code
-	with (instance_create_layer(x,y, "bullets", o_bullet)){
-		speed = 10;
-		direction  = other.image_angle;
-		image_angle = direction;
+	if(o_player.has_control){
+		with (instance_create_layer(x,y, "bullets", o_bullet)){
+			speed = 10;
+			direction  = other.image_angle;
+			image_angle = direction;
+		}
 	}
 	
 }

@@ -1,9 +1,9 @@
-health = 100;
+health = 10;
 walkspeed = 4;
 hsp = 0;
 vsp = 0;
 grv = 0.4;
-
-//dusting
-//alarm[0] = 5;
-//can_dust = true;
+flash = 0;
+give_space = 16;
+has_control = 1;
+timer = 60*5
