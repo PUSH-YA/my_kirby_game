@@ -32,5 +32,10 @@ It helped me learn/improve the following:
 
 
 ## Creditors:
-Heavy inspiration from the following playlist: 
+Heavy inspiration from the following playlist: [GameMakeStudio2 platformer](https://youtube.com/playlist?list=PLPRT_JORnIupqWsjRpJZjG07N01Wsw_GJ)
+
+Dust particle system: [GameMaker 2 dust particle system](https://youtu.be/mJU49Ojl7CY)
+
+Dynamic camera system: [GameMaker 2 camera follow any object](https://youtu.be/SyirFOFMlTk)
+
 
