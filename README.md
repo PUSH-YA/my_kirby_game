@@ -15,7 +15,9 @@ This is game is made as a gift for someone (I want them to remain anonymous) but
 ![ss5](https://user-images.githubusercontent.com/91928008/237062020-e90973a0-8fe4-4d2c-95a3-9b9a259e792d.png)
 ![ss2](https://user-images.githubusercontent.com/91928008/237061970-f50ae897-2254-4837-8081-ef2a582db6bd.png)
 
-
+## Instructions to play the game
+Download the operaGX browser and paste the following link
+[link to play the game](https://gx.games/games/s7y807/mykirbygame/tracks/dc010156-bf44-47ad-a532-23036f1257e7)
 
 ## Niche details about the game making process 
 The game is built on Game Maker Language which has a similar syntax to java script and other C based languages
