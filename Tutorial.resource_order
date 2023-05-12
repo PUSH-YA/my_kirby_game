@@ -29,6 +29,7 @@
     {"name":"end_screen","order":5,"path":"rooms/end_screen/end_screen.yy",},
     {"name":"s_player_jumping","order":4,"path":"sprites/s_player_jumping/s_player_jumping.yy",},
     {"name":"s_dust","order":21,"path":"sprites/s_dust/s_dust.yy",},
+    {"name":"o_music","order":15,"path":"objects/o_music/o_music.yy",},
     {"name":"o_weapon","order":4,"path":"objects/o_weapon/o_weapon.yy",},
     {"name":"o_transition","order":9,"path":"objects/o_transition/o_transition.yy",},
     {"name":"sn_jump","order":1,"path":"sounds/sn_jump/sn_jump.yy",},

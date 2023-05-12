@@ -53,20 +53,21 @@ if(health > 0){
 	image_speed = 0;
 	if(vsp > 0) {
 		image_index = 1;
-		//landing dust animation
-		if(y >= 600){
-			repeat(5){
-				with(instance_create_layer(x, bbox_bottom+10, "bullets", o_dust)){
-					audio_play_sound(sn_land,5,false);
-					vsp = 0;
-				}
-			}
-		}
 	}
 	else image_index = 0;
 	
 	//on foor
 	}else{
+		
+		//landing dust animation and sound
+		if(sprite_index == s_player_jumping) {
+			audio_play_sound(sn_land,5,false);
+			repeat(irandom_range(4,8)){
+				with(instance_create_layer(x, bbox_bottom, "bullets", o_dust)){
+					vsp = 0;
+				}
+			}
+		}
 		
 		if(hsp == 0){
 		sprite_index = s_player_standing;
