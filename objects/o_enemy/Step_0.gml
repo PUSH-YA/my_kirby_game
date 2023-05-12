@@ -29,6 +29,7 @@ if(enemy_health > 0){
 			
 			attack = 0;
 			with (instance_create_layer(x,y, "bullets", o_bullet_boss)){
+				audio_play_sound(sn_enemy_shot, 8, false);
 				speed = 4;
 				direction  =  point_direction(other.x,other.y,o_player.x, o_player.y-5);
 				image_angle = direction;

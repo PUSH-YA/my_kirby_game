@@ -16,6 +16,7 @@ if(menu_control){
 		menu_committed = menu_cursor;
 		menu_control = false
 	}
+	
 }
 
 if (menu_x > gui_width + 150) && (menu_committed != -1)

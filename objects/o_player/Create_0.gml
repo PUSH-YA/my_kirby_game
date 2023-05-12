@@ -1,4 +1,4 @@
-health = 10;
+ health = 10;
 walkspeed = 4;
 hsp = 0;
 vsp = 0;

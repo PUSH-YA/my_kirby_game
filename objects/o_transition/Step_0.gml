@@ -1,3 +1,4 @@
+audio_play_sound(sn_loop,1,true);
 //progress the transition
 if(mode != TRANS_MODE.OFF){
 	if (mode == TRANS_MODE.INTRO){

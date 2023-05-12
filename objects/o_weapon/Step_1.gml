@@ -11,8 +11,9 @@ if (keyboard_check_pressed(vk_shift) || mouse_check_button_pressed(mb_any)){
 		x = x - lengthdir_x(i, image_angle);
 		y = y - lengthdir_y(i, image_angle);
 	}
-
-	//like editing in the player code
+	
+	//shoot
+	audio_play_sound(sn_shot,10,false);
 	if(o_player.has_control){
 		with (instance_create_layer(x,y, "bullets", o_bullet)){
 			speed = 10;

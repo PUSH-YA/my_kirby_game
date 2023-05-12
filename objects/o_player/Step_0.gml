@@ -7,12 +7,16 @@ if(has_control){
 	//movement
 	var move = key_right - key_left;
 	hsp = move * walkspeed;
-	vsp = vsp + grv;
-
+	
 	if(place_meeting(x,y+1,o_wall) && (key_jump)){
-		vsp = -7;
+	audio_play_sound(sn_jump,6,false);
+	vsp = -8;
 	}
 }
+	
+vsp = vsp + grv;
+
+
 
 
 //horizontal collision
@@ -43,6 +47,7 @@ if(x >= 1366 - give_space){
 
 //Animation
 if(health > 0){
+	//in air
 	if(!place_meeting(x,y+1,o_wall)){
 	sprite_index = s_player_jumping;
 	image_speed = 0;
@@ -52,18 +57,27 @@ if(health > 0){
 		if(y >= 600){
 			repeat(5){
 				with(instance_create_layer(x, bbox_bottom+10, "bullets", o_dust)){
-				vsp = 0;
+					audio_play_sound(sn_land,5,false);
+					vsp = 0;
 				}
 			}
 		}
 	}
 	else image_index = 0;
-	}else if(hsp == 0){
-		sprite_index = s_player_standing;
+	
+	//on foor
 	}else{
-		sprite_index = s_player_walking;
-		image_speed = 1;
+		
+		if(hsp == 0){
+		sprite_index = s_player_standing;
+		}else{
+			sprite_index = s_player_walking;
+			image_speed = 1;
+		}
 	}
+	
+	
+	// dead
 }else{
 	image_speed = 0.25;
 	//has_control = 0;
@@ -75,6 +89,7 @@ if(health > 0){
 		slide_transition(TRANS_MODE.GOTO, Menu);
 	}else{
 		timer--;
+		if(timer == (60*5 - 5)) audio_play_sound(sn_death, 11, false);
 	}
 }
 
